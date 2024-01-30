@@ -1,0 +1,20 @@
+{
+    "name": "tommica/laravel-actions-scramble",
+    "description": "Extensions for Scramble to enable automatic parsing of routes when using laravel actions",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tommica\\LaravelActionsScramble\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tommi Carleman",
+            "email": "me@tommicarleman.net"
+        }
+    ],
+    "require": {
+        "dedoc/scramble": "^0.8.5"
+    }
+}
