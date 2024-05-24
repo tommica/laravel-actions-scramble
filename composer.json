@@ -15,6 +15,6 @@
         }
     ],
     "require": {
-        "dedoc/scramble": "^0.8.5"
+        "dedoc/scramble": ">=0.8.5"
     }
 }
