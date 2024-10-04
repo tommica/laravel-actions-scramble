@@ -7,7 +7,6 @@ use Dedoc\Scramble\Support\Generator\Operation;
 use Dedoc\Scramble\Support\OperationExtensions\RequestBodyExtension;
 use Dedoc\Scramble\Support\OperationExtensions\RulesExtractor\ValidationNodesResult;
 use Dedoc\Scramble\Support\RouteInfo;
-use Illuminate\Routing\Route;
 use Illuminate\Support\Arr;
 use PhpParser\Node;
 use PhpParser\NodeFinder;
@@ -23,7 +22,7 @@ class LaravelActionsExtension extends RequestBodyExtension
         parent::handle($operation, $routeInfo);
     }
 
-    protected function extractRouteRequestValidationRules(Route $route, $methodNode)
+    protected function extractRouteRequestValidationRules(RouteInfo $route, $methodNode)
     {
         $rules = [];
         $nodesResults = [];
